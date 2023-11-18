@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.clock{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(45deg,black,grey);
+    color:whitesmoke;
+    position:relative;   
+}
+
+.digital{
+    font-size: 31px;   
+    text-align: center;
+    align-items: center;
+    padding:5rem 33% 5rem ;
+}
+
+p{
+    align-items: center;
+    text-align: center;
+    border: 2px solid whitesmoke;
+    color:whitesmoke;
+    border-radius:20px;
+    font-family: fantasy;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 2rem 2rem 4rem;
+}
+    
+.digital span{  
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    font-size: 70px;
+}
+
+.digital span::after{    
+    font-size: 10px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform:translateX(-50%);
+
+}
+#hrs::after{
+    content: 'HOURS';
+}
+#min::after{
+    content: 'MINUTES';
+}
+#sec::after{
+    content: 'SECONDS';
+}
